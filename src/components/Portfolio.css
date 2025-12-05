@@ -91,3 +91,9 @@
   width: 350px;
 }
 }
+
+@media (max-width: 474px) {
+  .projectCard{
+    max-width: 260px;
+  }
+}

@@ -142,3 +142,9 @@
     margin: 20px;
   }
 }
+
+@media (max-width: 474px) {
+  .myInfo .imgContainer {
+  max-width: 260px;
+  }
+}

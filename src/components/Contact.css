@@ -165,5 +165,19 @@ h1{
 .messageContainer{
   padding-bottom: 5rem;
 }
+}
 
+@media (max-width: 474px) {
+  .contactTitle{
+    font-size: 36px;
+  }
+
+
+  input {
+    max-width: 300px;
+  }
+
+  .contactInfo{
+    flex-direction: column;
+  }
 }

@@ -248,11 +248,21 @@
     margin-right: 2rem;
   }
 
-  .bar {
-    width: 220px;
-  }
-
   .border {
     display: none;
+  }
+}
+
+@media (max-width: 474px){
+  .arabicBar{
+    width: 180px;
+  }
+
+  .englishBar{
+    width: 180px;
+  }
+
+  .germanBar{
+    width: 180px;
   }
 }
