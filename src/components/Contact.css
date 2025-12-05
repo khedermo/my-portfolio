@@ -1,0 +1,169 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 0 120px 5rem 120px;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  height: auto;
+}
+
+.infoContainer {
+display: flex;
+flex-direction: column;
+}
+
+.contactInfo {
+    display: flex;
+    gap: 4rem;
+}
+
+h1 {
+  font-family: "poppins";
+  font-weight: 250;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+.contactTitle {
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 50px;
+  background: linear-gradient(to right, #5b21b6, #399, #dc82dc, #399, #5b21b6);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 20px;
+  font-family: "poppins";
+  font-weight: 200;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-size: 20px;
+  font-family: "poppins";
+  font-weight: 200;
+  text-decoration: none;
+  color: #399;
+}
+
+.whatsapp {
+   width: 30px;
+   height: 30px;
+}
+
+a.whatsapp  {
+    margin-top: 1rem;
+}
+
+.chatSign {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.messageContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 450px;
+  height: 40px;
+  border-radius: 8px;
+  border: solid 1px rgb(144, 222, 222);
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+}
+
+.messageContainer button {
+  font-family: "Sansation";
+  font-size: 14px;
+  background: linear-gradient(#0f172a, #0f172a) padding-box,
+    linear-gradient(90deg, #ec4899, #8b5cf6) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  width: 8rem;
+  height: 40px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.validationError {
+  color: #ff4d4d;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.successMsg {
+  color: #22c55e;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  animation: fadeIn 0.3s ease;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1158px){
+  input{
+    width: 350px;
+  }
+
+  .contactTitle{
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px){
+  .mainContainer {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 1fr;
+  gap: 4rem;
+  padding: 0 1.5rem;
+}
+
+input{
+  width: 450px;
+}
+
+
+h1{
+  font-size: 26px;
+}
+
+.contactTitle{
+  font-size: 40px;
+}
+
+.contactTitle br{
+  display: none;
+}
+
+.contactText{
+  margin-bottom: 0;
+}
+
+.messageContainer{
+  padding-bottom: 5rem;
+}
+
+}

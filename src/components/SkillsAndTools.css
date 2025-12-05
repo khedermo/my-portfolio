@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 0.9fr;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: solid 2px gray;
+  width: 100%;
+  padding: 0 120px;
+  padding-bottom: 5rem;
+}
+
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 40px;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.technologies img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.technologies :nth-child(n + 5) {
+  transform: translateX(75px);
+}
+
+.skillsText {
+  font-family: "poppins";
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 50px;
+  background: linear-gradient(to right, #5b21b6, #399, #dc82dc, #399, #5b21b6);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 5rem;
+  margin-bottom: 40px;
+  padding: 0;
+  margin-left: 120px;
+}
+
+.skillsContainer .tecContainer p {
+  font-size: 30px;
+  font-family: "poppins";
+  font-weight: 100;
+}
+
+.border {
+  background-color: gray;
+  height: 300px;
+  width: 2px;
+  margin-right: 2rem;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.languages p {
+  font-size: 24px;
+  font-family: "poppins";
+  font-weight: 100;
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+}
+
+.languages p:first-child {
+  margin-top: 4rem;
+}
+
+.arabicBar {
+  margin-top: 5rem;
+  width: 300px;
+  background-color: #399;
+  height: 2px;
+  position: relative;
+}
+
+.arabicBar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #399;
+}
+
+.englishBar {
+  margin-top: 1rem;
+  width: 300px;
+  background-color: #399;
+  height: 2px;
+  position: relative;
+}
+
+.englishBar::after {
+  content: "";
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #399;
+}
+
+.germanBar {
+  margin-top: 1rem;
+  width: 300px;
+  background-color: #399;
+  height: 2px;
+  position: relative;
+}
+
+.germanBar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #399;
+}
+
+@media (max-width: 1124px) {
+  .skillsText {
+    font-size: 44px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .technologies {
+    gap: 5px;
+  }
+
+  .technologies :nth-child(n + 5) {
+    transform: translateX(55px);
+  }
+
+  .technologies img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skillsContainer{
+    width: auto;
+  }
+
+  .skillsContainer .tecContainer p {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .border {
+    margin-right: 30px;
+  }
+
+  .languages p {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .languages p:first-child {
+    margin-top: 4rem;
+  }
+
+  .arabicBar {
+    width: 220px;
+  }
+
+  .arabicBar::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .englishBar {
+    width: 220px;
+  }
+
+  .englishBar::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .germanBar {
+    width: 220px;
+  }
+
+  .germanBar::after {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .skillsContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    padding: 0 1.5rem;
+  }
+
+  .skillsText {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .technologies {
+    grid-template-columns: repeat(3, 100px);
+    margin: 0;
+  }
+
+  .technologies :nth-child(n + 5) {
+    transform: unset;
+  }
+  
+  .technologies :nth-child(7){
+    transform: translateX(100px);
+  }
+
+  .technologies img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillsContainer .tecContainer p {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .languages p {
+    font-size: 20px;
+    margin-right: 2rem;
+  }
+
+  .bar {
+    width: 220px;
+  }
+
+  .border {
+    display: none;
+  }
+}

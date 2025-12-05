@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap");
+
+#nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem 120px;
+  border: 1px solid #345;
+  border-radius: 16px;
+  font-family: "Lexend Exa", sans-serif;
+  font-weight: 200;
+  background-color: #0b111b;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.openNavBar {
+  display: none;
+}
+
+.closeNavBar {
+  display: none;
+}
+
+#nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 16px;
+}
+
+#nav .navBtn{
+  border: none;
+  background-color: transparent;
+  font-family: "Lexend Exa";
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+}
+
+#nav .navBtn:hover {
+  color: #399;
+  cursor: pointer;
+}
+
+#nav h1 {
+  padding: 0;
+  margin: 0;
+  margin-right: 1.5rem;
+  font-weight: 250;
+  font-size: 20px;
+}
+
+@media (max-width: 983px) {
+  #nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: min(15em, 100%);
+    z-index: 10;
+    margin: 0;
+    border-left: 1px solid gray;
+    border-radius: 0;
+    transition: right 300ms ease-in-out;
+  }
+
+  .openNavBar {
+    background: url("../assets/menu_40dp_C9C9C9_FILL0_wght300_GRAD0_opsz40.svg")
+      no-repeat center;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: transparent;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    margin: 0;
+  }
+
+  .closeNavBar {
+    background: url(../assets/close_40dp_C9C9C9_FILL0_wght300_GRAD0_opsz40.svg)
+      no-repeat center;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border: transparent;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 0;
+    align-self: flex-start;
+  }
+
+  #nav.show {
+    right: 0;
+  }
+
+  #nav h1 {
+    margin-bottom: 60px;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #nav li{
+    text-align: left;
+  }
+
+  #nav a {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
